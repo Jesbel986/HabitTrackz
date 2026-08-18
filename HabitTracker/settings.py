@@ -131,9 +131,16 @@ LOGIN_URL = '/login/'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "https://habittrackz-frontend.onrender.com",
+    "https://habittrackz.onrender.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://habittrackz.onrender.com",
+    "https://habittrackz-frontend.onrender.com",
+]
 
 
 REST_FRAMEWORK = {
