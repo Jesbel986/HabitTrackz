@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>My Habits</h2>
+<a href="{% url 'add_habit' %}">+ Add Habit</a>
+{% for habit in habits %}
+    <h3>{{ habit.name }}</h3>
+    <p>{{ habit.description }}</p>
+    <p>Completed: {{ habit.completed }}</p>
+{% empty %}
+    <p>No habits yet.</p>
+{% endfor %}
+
+{% endblock %}
