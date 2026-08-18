@@ -3,7 +3,7 @@ import axios from "axios";
 import Login from "./Login";
 import "./App.css";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://habittrackz.onrender.com";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(
